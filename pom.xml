@@ -36,7 +36,7 @@
 					<checkModificationExcludes>
 						<checkModificationExclude>pom.xml</checkModificationExclude>
 					</checkModificationExcludes>
-					<goals>install</goals>
+					<goals>clean</goals>
 				</configuration>
 			</plugin>
 		</plugins>
