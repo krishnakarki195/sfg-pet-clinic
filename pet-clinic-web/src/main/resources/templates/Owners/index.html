@@ -9,10 +9,12 @@
     <table id="owners" class="table table-striped">
         <thead>
         <tr>
-            <th style="width: 150px;">Name</th>
-            <th style="width: 200px;">Address</th>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
             <th>City</th>
-            <th style="width: 120px">Telephone</th>
+            <th>Telephone</th>
             <th>Pets</th>
         </tr>
         </thead>
@@ -20,7 +22,11 @@
             <tr th:each="owner : ${owners}">
                 <td th:text="${owner?.id}">1</td>
                 <td th:text="${owner?.firstName}">Buck</td>
-                <td th:text="${owner?.lastName}">Doe</td>
+                <td th:text="${owner?.lastName}">Buck</td>
+                <td th:text="${owner?.address}">123 Macarthur</td>
+                <td th:text="${owner?.city}">Irving</td>
+                <td th:text="${owner?.telephone}">098-098-0987</td>
+                <td th:text="${owner?.pets}">Pets</td>
             </tr>
         </tbody>
     </table>
